@@ -1,0 +1,22 @@
+for Eigen:
+$>cd ANN
+$>mkdir Eigen
+$>cd [path/outside/ANN]
+$>git clone https://gitlab.com/libeigen/eigen.git
+$>cd eigen
+$>mkdir build
+$>cd build
+$>cmake -DCMAKE_INSTALL_PREFIX=[path/to/ANN/Eigen] ..
+$>make install
+
+for Catch2
+$>cd ANN
+$>mkdir Catch2
+$>cd [path/outside/ANN]
+$>git clone https://github.com/catchorg/Catch2.git //need catch2 3.0 branch
+$>cd Catch2
+$>mkdir build
+$>cd build
+$>cmake -DCMAKE_INSTALL_PREFIX=[path/to/ANN/Catch2] ..
+$>cmake -build . --config Debug
+$>make install
